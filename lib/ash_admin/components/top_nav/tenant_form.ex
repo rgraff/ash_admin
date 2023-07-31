@@ -14,7 +14,6 @@ defmodule AshAdmin.Components.TopNav.TenantForm do
         :if={@editing_tenant}
         for={to_form(%{}, as: :tenant)}
         phx-submit={@set_tenant}
-        phx-target={@myself}
       >
         <input
           type="text"
